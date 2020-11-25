@@ -63,6 +63,29 @@ const App1 = () => {
     //orbitControl.addEventListener('change',renderCanvas);
   };
 
+  //  const LoadFloor = () => {
+  //   let floor;
+  //   const textureLoader = new THREE.TextureLoader();
+  //   const t1 = textureLoader.load(Img, (data) => {
+  //     console.log('data', data);
+  //     data.needsUpdate = true;
+  //     floor.scale.set(1.0, data.image.height / data.image.width, 1.0);
+  //   });
+
+  //   const groundGeometry = new THREE.PlaneBufferGeometry(20, 20, 10, 10);
+  //   const groundMaterial = new THREE.MeshBasicMaterial({
+  //     map: t1,
+  //   });
+  //   floor = new THREE.Mesh(groundGeometry, groundMaterial);
+  //   floor.geometry.computeBoundingBox();
+  //   floor.geometry.needsUpdate = true;
+  //   const sizeOfMarker = floor.geometry.boundingBox.clone();
+  //   floor.position.y = -10;
+  //   floor.rotation.x = -Math.PI / 2;
+  //   scene.add(floor);
+  // };
+
+
   const LoadFloor = () => {
     const textureLoader = new THREE.TextureLoader();
     const t1 = textureLoader.load(Img);
